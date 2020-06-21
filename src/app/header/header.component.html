@@ -1,7 +1,14 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Recipe Book</a>
+<<<<<<< HEAD
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+=======
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" appDropdown #r='appDropdown'>
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'show':r.isOpen}" >
+>>>>>>> 53666ab... git commit
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a class="nav-link" href="#"(click)="onSelect('recipe')">Recipes <span class="sr-only">(current)</span></a>
@@ -9,7 +16,11 @@
         <li class="nav-item">
           <a class="nav-link" href="#" (click)="onSelect('shopping-list')">Shopping List</a>
         </li>
+<<<<<<< HEAD
         </ul> 
+=======
+        </ul>
+>>>>>>> 53666ab... git commit
         <ul class="nav navbar-nav navbar-right">
             <li class="nav-item dropdown" appDropdown #r='appDropdown'>
                 <a class="nav-link dropdown-toggle" href="#" >
@@ -22,4 +33,8 @@
               </li>
         </ul>
     </div>
+<<<<<<< HEAD
   </nav>
+=======
+  </nav>
+>>>>>>> 53666ab... git commit
