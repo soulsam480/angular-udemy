@@ -1,7 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Recipe Book</a>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" appDropdown #r='appDropdown'>
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'show':r.isOpen}">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a class="nav-link" href="#"(click)="onSelect('recipe')">Recipes <span class="sr-only">(current)</span></a>
